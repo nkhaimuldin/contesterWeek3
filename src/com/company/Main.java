@@ -15,10 +15,16 @@ public class Main {
         System.out.println(min+" "+max);
     }
     public static double min(double a, double b){
-            return a<b?a:b;
+            if(a<b)
+                return a;
+            else
+                return b;
     }
     public static double max(double a, double b){
-        return a>b?a:b;
+        if(a>b)
+            return a;
+        else
+            return b;
     }
 
 }
